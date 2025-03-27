@@ -26,6 +26,7 @@ pipeline {
     
         stage('Unit Test') {
            steps {
+               sh "sleep 60"
                sh "mvn test"
     }
 }
